@@ -1,0 +1,28 @@
+$grey = #ddd
+h1
+  background-color red
+  color white
+
+.alert
+  position relative
+  width 600px
+  padding 10px
+  margin 10px
+  border-radius 3px
+  border 1px solid lighten($grey, 30%)
+  background-color lighten($grey, 70%)
+
+  &--success
+    border 1px solid lighten(green, 30%)
+    background-color lighten(green, 70%)
+
+  &--error
+    border 1px solid lighten(red, 30%)
+    background-color lighten(red, 70%)
+
+  &__close
+    position absolute
+    padding 3px
+    top: 5px
+    right: 10px
+    cursor pointer

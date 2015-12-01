@@ -3,8 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "scripts" : {
+    "lint": "standard app.js",
+    "build": "stylus app.styl",
+    "watch": "stylus -w app.styl",
+    "start": "http-server -p 3000",
+    "clean": "rm *.css"
   },
   "standard": {
     "globals": ["Vue"]
@@ -12,3 +16,4 @@
   "author": "Felipe Apostol <flipjs.io@gmail.com> (http://flipjs.io/)",
   "license": "MIT"
 }
+

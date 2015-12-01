@@ -1,0 +1,38 @@
+h1 {
+  background-color: #f00;
+  color: #fff;
+}
+.alert {
+  position: relative;
+  width: 600px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 3px;
+  border: 1px solid #e7e7e7;
+  background-color: #f5f5f5;
+}
+.alert.alert--success {
+  border: 1px solid #00f300;
+  background-color: #8cff8c;
+}
+.alert.alert--error {
+  border: 1px solid #ff4d4d;
+  background-color: #ffb3b3;
+}
+.alert .alert__close {
+  position: absolute;
+  padding: 3px;
+  top: 5px;
+  right: 10px;
+  cursor: pointer;
+  background-color: #fff;
+}
+.alert .alert__close.alert__close--white {
+  background-color: #fff;
+}
+.alert .alert__close.alert__close--red {
+  background-color: #f00;
+}
+.alert .alert__close.alert__close--grey {
+  background-color: #f5f5f5;
+}

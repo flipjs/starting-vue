@@ -12,11 +12,15 @@
   <alert type="error">Lorem debitis aperiam deleniti suscipit consequatur cum cum rerum provident</alert>
 
   <template id="alert-template">
-    <div :class="alertClasses" v-if="show">
+    <div :class="alertClasses" v-show="show">
       <strong>{{ type | capitalize }}
       <span v-show="type">!</span> </strong>
       <slot></slot>
-      <span class="alert__close" @click="show = false">x</span>
+      <span class="alert__close alert__close--white"
+        @click="show = false"
+      >
+        x
+      </span>
     </div>
   </template>
 
